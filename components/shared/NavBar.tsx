@@ -39,8 +39,12 @@ export default function NavBar() {
             </div>
             <div className=" flex items-center gap-2">
               <Button className="" variant={"outline"}>
-                <Link href="/login">Login</Link>
+                <Link href="/sign-in">Login</Link>
               </Button>
+              <Button variant={"outline"} className=" bg-indigo-500">
+                <Link href="/dashboard">Dashboard</Link>
+              </Button>
+
               <Button className=" bg-indigo-500">
                 <Link href="/sign-up">Get Started Free - It&apos;s Free</Link>
               </Button>
