@@ -582,3 +582,96 @@ export const mailmindFAQs2 = [
       "You can reach out to our support team via live chat, email, or our help center for assistance with any issues or questions.",
   },
 ];
+
+export const blogData = [
+  {
+    id: "freelance-career-mobile-apps",
+    imageUrl:
+      "https://framerusercontent.com/images/1wsSYKV1mkLUH6OZ4ZtbLhXxcsg.png?scale-down-to=1024",
+    title: "How to Build Your Freelance Career Developing Mobile Apps",
+    date: "January 20, 2024",
+    readTime: "11",
+    category: "Marketing Tips",
+  },
+  {
+    id: "ai-future-business",
+    imageUrl:
+      "https://framerusercontent.com/images/cG3A0vd2GVo6lnDjmKqJ2gB7Mw.png?scale-down-to=1024",
+    title: "The Future of AI in Business: Opportunities and Challenges",
+    date: "February 5, 2024",
+    readTime: "8",
+    category: "Artificial Intelligence",
+  },
+  {
+    id: "seo-2024-strategies",
+    imageUrl:
+      "https://framerusercontent.com/images/Dq6FQf0qhIk6aBCRnDbOzex2rY.png?scale-down-to=1024",
+    title: "SEO Strategies for 2024: How to Rank Higher on Google",
+    date: "March 12, 2024",
+    readTime: "10",
+    category: "SEO & Marketing",
+  },
+  {
+    id: "remote-work-boost-productivity",
+    imageUrl:
+      "https://framerusercontent.com/images/3kocV2DNtGe3TPcniNxy8bVr4.png?scale-down-to=1024",
+    title: "Remote Work: How to Stay Productive and Motivated",
+    date: "April 8, 2024",
+    readTime: "9",
+    category: "Productivity",
+  },
+  {
+    id: "ux-design-trends-2024",
+    imageUrl:
+      "https://framerusercontent.com/images/u7NgdeRR2uOwAJzFnCfSzXqk.png?scale-down-to=1024",
+    title: "Top UX/UI Design Trends to Watch in 2024",
+    date: "May 15, 2024",
+    readTime: "7",
+    category: "Design",
+  },
+  {
+    id: "web3-impact-digital-world",
+    imageUrl:
+      "https://framerusercontent.com/images/OfxjTPhFPs0m7j4fQzJrjb6mRaA.png?scale-down-to=1024",
+    title: "Understanding Web3: The Next Evolution of the Internet",
+    date: "June 22, 2024",
+    readTime: "12",
+    category: "Blockchain",
+  },
+  {
+    id: "social-media-growth-hacks",
+    imageUrl:
+      "https://framerusercontent.com/images/C3UZBfUQ65X4xwlwLQQx9QcM.png?scale-down-to=1024",
+    title: "10 Social Media Growth Hacks for 2024",
+    date: "July 3, 2024",
+    readTime: "6",
+    category: "Social Media",
+  },
+  {
+    id: "startups-funding-tips",
+    imageUrl:
+      "https://framerusercontent.com/images/iIVwyDez1hsRob42i4hSRmOrA.png?scale-down-to=1024",
+    title: "How Startups Can Secure Funding in 2024",
+    date: "August 10, 2024",
+    readTime: "8",
+    category: "Entrepreneurship",
+  },
+  {
+    id: "coding-best-practices",
+    imageUrl:
+      "https://framerusercontent.com/images/iIVwyDez1hsRob42i4hSRmOrA.png?scale-down-to=1024",
+    title: "Coding Best Practices: Writing Clean & Maintainable Code",
+    date: "September 18, 2024",
+    readTime: "10",
+    category: "Development",
+  },
+  {
+    id: "email-marketing-strategies",
+    imageUrl:
+      "https://framerusercontent.com/images/RR1O4xqDBi0ZJQFbxMCmCxEjWE.png?scale-down-to=1024",
+    title: "Email Marketing in 2024: Strategies to Boost Engagement",
+    date: "October 25, 2024",
+    readTime: "9",
+    category: "Marketing",
+  },
+];

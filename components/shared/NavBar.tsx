@@ -28,7 +28,7 @@ export default function NavBar() {
                 <Button
                   variant={"link"}
                   className=" font-semibold hover:text-indigo-500">
-                  <Link href={"/"}>Blog</Link>
+                  <Link href={"/blog"}>Blog</Link>
                 </Button>
                 <Button
                   variant={"link"}
@@ -41,7 +41,7 @@ export default function NavBar() {
               <Button className="" variant={"outline"}>
                 <Link href="/sign-in">Login</Link>
               </Button>
-              <Button variant={"outline"} className=" bg-indigo-500">
+              <Button variant={"outline"} className=" text-white bg-indigo-500">
                 <Link href="/dashboard">Dashboard</Link>
               </Button>
 
