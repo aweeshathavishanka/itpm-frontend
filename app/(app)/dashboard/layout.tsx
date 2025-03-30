@@ -10,7 +10,7 @@ import {
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { FaRegClock } from "react-icons/fa6";
+import { FaRegClock, FaRegNewspaper } from "react-icons/fa6";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 export const metadata: Metadata = {
@@ -63,6 +63,22 @@ export default function DashboardLayout({
                     <TooltipContent>
                       <Link href={"/dashboard/reminders"}>
                         <p>Reminders</p>
+                      </Link>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Link
+                        href={"/dashboard/reminders"}
+                        className=" w-8 h-8 flex items-center justify-center border bg-gray-50 rounded-full p-1">
+                        <FaRegNewspaper />
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <Link href={"/dashboard/summarizations"}>
+                        <p>Summaries</p>
                       </Link>
                     </TooltipContent>
                   </Tooltip>

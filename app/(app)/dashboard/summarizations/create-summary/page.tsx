@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -11,6 +11,15 @@ export default function CreateSummaryPage() {
     summary: "",
     keywords: "",
   });
+
+  // Set today's date as the minimum value for the date input field
+  const [minDate, setMinDate] = useState("");
+
+  useEffect(() => {
+    const today = new Date();
+    const formattedDate = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
+    setMinDate(formattedDate); // Set minDate
+  }, []);
 
   // Handle input changes
   const handleChange = (
@@ -35,16 +44,17 @@ export default function CreateSummaryPage() {
     });
 
     if (res.ok) {
-      router.push("/"); // Redirect to home or summary list page
+      router.push("/dashboard/summarizations"); // Redirect to home or summary list page
     }
   };
 
   return (
-    <div className="max-w-2xl mx-auto py-10">
-      <h2 className="text-2xl font-bold mb-4">Create New Summary</h2>
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-4 bg-white p-6 rounded-lg shadow">
+    <div className="max-w-2xl  p-10">
+      <div className=" flex flex-col gap-y-2 mb-4">
+        <h2 className="text-3xl font-bold mb-4">Create New Summary</h2>
+        <p>Please fill out the form below to create a new summary.</p>
+      </div>
+      <form onSubmit={handleSubmit} className="space-y-4 bg-white rounded-lg ">
         <div>
           <label className="block font-medium">Date</label>
           <input
@@ -54,6 +64,7 @@ export default function CreateSummaryPage() {
             onChange={handleChange}
             className="w-full p-2 border rounded-md"
             required
+            min={minDate} // Set minimum date to today
           />
         </div>
 
